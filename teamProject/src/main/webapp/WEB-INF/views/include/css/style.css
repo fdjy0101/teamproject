@@ -1,0 +1,172 @@
+@charset "UTF-8";
+@media screen and (min-width:1201px) {
+.wrap {margin: 0 auto;}
+.main-nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 40px;
+	background-color:#fff;
+	z-index: 10000;
+}
+.top {
+	width: 100%;
+	height: 750px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.main-nav > a {
+	position: absolute;
+	bottom: 0;
+	width: 10%;
+	text-align: center;
+	font-size: 15px;
+	line-height: 30px;
+	border-bottom: 1px solid #273d43;
+	transition: all 0.3s;
+}
+.main-nav > a:hover {
+	background-color: #006699;
+	color: cornsilk;
+	font-weight: 200;
+}
+.main-nav > ul {
+	position: absolute;
+	width: 80%;
+	left: 10%;
+	bottom: 0;	
+}
+.main-nav > ul > li {
+	float: left;
+	width: 14.285714%;
+	position: relative;
+}
+.main-nav > ul > li > a {
+	text-transform: uppercase;
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	line-height: 30px;
+	color: #273d43;
+	font-size: 11px;
+	font-weight: 600;
+	letter-spacing: 3px;
+	border-bottom: 1px solid #273d43;
+	transition: letter-spacing 1.3s;
+	box-sizing: border-box;
+}
+.main-nav > ul > li:hover > a {
+	letter-spacing: 5px;
+	color: #d3bd68;
+	border: 1px solid #273d43;
+	border-bottom: transparent;
+/*	background-color: #c65757;*/
+	font-weight: bolder;
+}
+.main-nav > ul li:nth-child(n) ul {
+	position: absolute;
+	width: 100%;
+	padding-top: 50px;
+	border-left: 1px solid #273d43;
+	border-bottom: 1px solid #273d43;
+	border-right: 1px solid transparent;
+	background-color: rgba(255, 255, 255, 0.85);
+	display: none;
+	box-sizing: border-box;
+}
+.main-nav > ul li:nth-child(n) ul li a {
+	color: #273d43;
+	line-height: 40px;
+	text-transform: uppercase;
+	font-size: 12px;
+	padding-left: 10px;
+	font-weight: 400;
+	
+}
+.main-nav > ul li:nth-child(n) ul a:hover {
+	color: #c65757;
+	font-weight: 600;
+}
+.main-nav > ul li:nth-child(n):hover .main-nav ul > li ul {
+	display: block;
+}
+.main-nav div:nth-child(1) {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 10%;
+	overflow: hidden;
+	border-bottom: 1px solid #273d43;
+}
+.main-nav div:nth-child(1) a {
+	transition: all 0.3s;
+	display:block;
+	background-color: #273d43;
+	color: cornsilk;
+	font-size: 11px;
+	line-height: 25px;
+	width: 35%;
+	margin-left: 10%;
+	float: left;
+	text-align: center;
+	border-radius: 10px;
+	margin-bottom: 5px;
+}
+.main-nav div:nth-child(1) a:last-child {
+	margin-right: 10%;
+}
+.main-nav div:nth-child(1) a:hover{
+	color: #273d43;
+	background-color: #d3bd68;
+	font-weight: bold;
+}
+
+/* .on붙었을 때 */
+.main-nav.on {
+	background-color: #273d43;
+	transition: all 0.4s;
+}
+.main-nav.on > a {
+	color: cornsilk;
+	font-weight: 300;
+}
+.main-nav.on > a:hover {background-color: #c65757;}
+.main-nav.on .main-nav > ul > li > a {
+	color: #fff;
+	font-weight: 300;
+	font-size: 11px;
+	letter-spacing: 3px;
+	transition: letter-spacing 1.3s;
+}
+.main-nav.on .main-nav > ul > li:hover > a {
+	letter-spacing: 5px;
+	color: #c65757;
+	border: 1px solid #fff;
+	border-bottom: transparent;
+	font-weight: bolder;
+}
+.main-nav.on .main-nav > ul > li ul {
+	background-color: rgba(39, 61, 67, 0.9);
+	display: none;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid transparent;
+	box-sizing: border-box;
+}
+.main-nav .main-nav > ul > li ul li a {
+	color: #fff;
+	font-weight: 200;
+	
+}
+.main-nav .main-nav > ul > li ul a:hover {
+	color: #d3bd68;
+	font-weight: 600;
+}
+.main-nav.on .main-nav div:nth-child(1) a:hover{
+		color:cornsilk;
+		background-color:#c65757; 
+}
+
+
+
+}
