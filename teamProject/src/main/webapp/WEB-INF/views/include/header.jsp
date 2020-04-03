@@ -7,4 +7,4 @@
 <link rel="stylesheet" href="${path}/include/css/reset.css">
 <link rel="stylesheet" href="${path}/include/css/style.css">
 <script src="${path}/include/js/jquery-3.4.1.min.js"></script>
-<script src="${path}/include/js/teamproject.js"></script>
+<script src="${path}/include/js/ifu.js"></script>

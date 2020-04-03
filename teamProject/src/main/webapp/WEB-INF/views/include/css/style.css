@@ -1,172 +1,89 @@
 @charset "UTF-8";
-@media screen and (min-width:1201px) {
-.wrap {margin: 0 auto;}
-.main-nav {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	height: 40px;
-	background-color:#fff;
-	z-index: 10000;
-}
-.top {
-	width: 100%;
-	height: 750px;
-	margin: 0 auto;
-	overflow: hidden;
-}
-.main-nav > a {
-	position: absolute;
-	bottom: 0;
-	width: 10%;
-	text-align: center;
-	font-size: 15px;
-	line-height: 30px;
-	border-bottom: 1px solid #273d43;
-	transition: all 0.3s;
-}
-.main-nav > a:hover {
-	background-color: #006699;
-	color: cornsilk;
-	font-weight: 200;
-}
-.main-nav > ul {
-	position: absolute;
-	width: 80%;
-	left: 10%;
-	bottom: 0;	
-}
-.main-nav > ul > li {
-	float: left;
-	width: 14.285714%;
-	position: relative;
-}
-.main-nav > ul > li > a {
-	text-transform: uppercase;
-	display: block;
-	text-align: center;
-	margin-top: 10px;
-	line-height: 30px;
-	color: #273d43;
-	font-size: 11px;
-	font-weight: 600;
-	letter-spacing: 3px;
-	border-bottom: 1px solid #273d43;
-	transition: letter-spacing 1.3s;
-	box-sizing: border-box;
-}
-.main-nav > ul > li:hover > a {
-	letter-spacing: 5px;
-	color: #d3bd68;
-	border: 1px solid #273d43;
-	border-bottom: transparent;
-/*	background-color: #c65757;*/
-	font-weight: bolder;
-}
-.main-nav > ul li:nth-child(n) ul {
-	position: absolute;
-	width: 100%;
-	padding-top: 50px;
-	border-left: 1px solid #273d43;
-	border-bottom: 1px solid #273d43;
-	border-right: 1px solid transparent;
-	background-color: rgba(255, 255, 255, 0.85);
-	display: none;
-	box-sizing: border-box;
-}
-.main-nav > ul li:nth-child(n) ul li a {
-	color: #273d43;
-	line-height: 40px;
-	text-transform: uppercase;
-	font-size: 12px;
-	padding-left: 10px;
-	font-weight: 400;
+h1 {font-size: 2.5rem}
+h2 {font-size: 1.8rem}
+h3 {font-size: 1.4rem}
+/*
+- 가로 크기 1100px
+- 왼쪽에 로고 배치
+- 오른쪽에 회원 링크 배치
+*/
+
+.header {position: fixed; width: 100%; }
+.header .logo {position: absolute; left: 0; top: 0; width: 10.25rem; height: 10rem; padding-left: 5rem}
+.header .join {position: absolute; right: 0; top: 0;}
+.header .join ul li {display: inline-block;}
+.nav {font-size: 16px; font-weight: bold; line-height: 10rem;}
+.nav ul {background: #fff; height: 10rem;}
+.nav ul > li {display: inline-block;}
+.nav li ul {background: rgb(109,109,109); display: none; height: auto; position:absolute; width:200px; z-index:200;}
+.nav li div {display: none;}
+
+
+
+
+
+
+.content-wrap {width: 100%; max-width: 144rem; min-width: 102.4rem; margin: 0 auto; padding-top: 40rem;}
+.banner {text-align: center;}
+
+.so {padding: 0 1.5rem;}
+.so > h1 {display: inline-block; padding: 0 0.5rem;}
+.so > div:nth-child(2) {display: inline-block; float: right;}
+.so > div:nth-child(3) {width: 82rem;}
+.so > div:nth-child(3) > div {display: inline-block; width: 15rem; padding: 0 0.5rem;}
+
+.section {display: flex;}
+
+.hat {padding: 0 1.5rem; width: 23%;}
+.hat > h1 {padding: 0 0.5rem;}
+.hat > div {display: flex; width: 26rem; flex-wrap: wrap;}
+.hat > div > div {width: 12rem; padding: 0 0.5rem;}
+
+.ifus {padding: 0 1.5rem; width: 70%}
+.ifus > ul li {display: inline-block;}
+.ifus > ul:last-child > li a > div:first-child {width: 25rem; height: 25rem;}
+
+/* 트렌드 */
+.trend {padding: 0 1.5rem;}
+.tab-wrap > .tab-box-container > .tab-box > a {display: inline-block; width: 12rem;}
+.tab-menu {display:flex;}
+.tab-btn {background: none; outline: 0; cursor: pointer; width: 30rem; height: 6rem; transition: 0.3s all;}
+.tab-btn.on {border-bottom:2px solid #df0000; font-weight:700; color:#df0000;}
+.tab-btn:hover {color:#df0000;}
+.tab-box {display: none;}
+.tab-box.on {display: block;}
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+	
 	
 }
-.main-nav > ul li:nth-child(n) ul a:hover {
-	color: #c65757;
-	font-weight: 600;
-}
-.main-nav > ul li:nth-child(n):hover .main-nav ul > li ul {
-	display: block;
-}
-.main-nav div:nth-child(1) {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	width: 10%;
-	overflow: hidden;
-	border-bottom: 1px solid #273d43;
-}
-.main-nav div:nth-child(1) a {
-	transition: all 0.3s;
-	display:block;
-	background-color: #273d43;
-	color: cornsilk;
-	font-size: 11px;
-	line-height: 25px;
-	width: 35%;
-	margin-left: 10%;
-	float: left;
-	text-align: center;
-	border-radius: 10px;
-	margin-bottom: 5px;
-}
-.main-nav div:nth-child(1) a:last-child {
-	margin-right: 10%;
-}
-.main-nav div:nth-child(1) a:hover{
-	color: #273d43;
-	background-color: #d3bd68;
-	font-weight: bold;
-}
 
-/* .on붙었을 때 */
-.main-nav.on {
-	background-color: #273d43;
-	transition: all 0.4s;
-}
-.main-nav.on > a {
-	color: cornsilk;
-	font-weight: 300;
-}
-.main-nav.on > a:hover {background-color: #c65757;}
-.main-nav.on .main-nav > ul > li > a {
-	color: #fff;
-	font-weight: 300;
-	font-size: 11px;
-	letter-spacing: 3px;
-	transition: letter-spacing 1.3s;
-}
-.main-nav.on .main-nav > ul > li:hover > a {
-	letter-spacing: 5px;
-	color: #c65757;
-	border: 1px solid #fff;
-	border-bottom: transparent;
-	font-weight: bolder;
-}
-.main-nav.on .main-nav > ul > li ul {
-	background-color: rgba(39, 61, 67, 0.9);
-	display: none;
-	border-left: 1px solid #fff;
-	border-bottom: 1px solid #fff;
-	border-right: 1px solid transparent;
-	box-sizing: border-box;
-}
-.main-nav .main-nav > ul > li ul li a {
-	color: #fff;
-	font-weight: 200;
+@media screen and (max-width: 768px) {
+.header .logo {padding-left: 1rem;}
+	
+} 
+
+@media screen and (min-width: 1200px) {
+
 	
 }
-.main-nav .main-nav > ul > li ul a:hover {
-	color: #d3bd68;
-	font-weight: 600;
-}
-.main-nav.on .main-nav div:nth-child(1) a:hover{
-		color:cornsilk;
-		background-color:#c65757; 
-}
 
 
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
