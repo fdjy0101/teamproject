@@ -6,73 +6,139 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Home</title>
-<%@ include file="include/header.jsp" %>
+<%@ include file="include/common-header.jsp" %>
 </head>
 <body>
-<%@ include file="include/contents_header.jsp" %>
-
+<%@ include file="include/site-header.jsp" %>
 <!-- contents -->
 <div class="content-wrap">
-	<div class="banner">
-		<h3>INVEST FOR US : IFU</h3>
-		<h2>아이디어가 돈이 되는공간 IFU</h2>
+	<div class="search">
+		<h1>INVEST FOR US : IFU</h1>
+		<p>아이디어가 돈이 되는공간 IFU</p>
 		<h1>어떤 프로젝트를 찾고 계신가요?</h1>
 		<form action="">
-			<input type="text" id="psearch" name="psearch" size="100">
-			<button type="submit" >검색</button>
+			<input type="text" id="search" name="search" placeholder="SEARCH" size="100">
+			<button type="submit">검색</button>
 		</form>
 	</div>
-	<div class="so">
-		<h1>주목하세요! <em>#오늘 오픈한 펀딩</em></h1>
-		<span style="padding-left: 35rem"><a href="#" style="letter-spacing: 0.5rem">&lt;12345&gt;</a></span>
-		<div>
+
+	<div class="mustbe">
+		<section class="service2 flex-container">
+			<div class="flex-col col-1">
+				<h1>안녕하세요!</h1>
+				<p class="text-justify">여행을 하며 느끼는 즐거움 중 하나는 바로 ‘음식’일 것이다.
+					여행지에서 먹는 음식에는 당시의 그곳 풍경과 운치, 그때의 감정이 담긴 채 훗날 추억이 된다. 그만큼 음식은 완벽한
+					여행을 위해 빠질 수 없는 필수 요소 중 하나다. 여행을 하며 느끼는 즐거움 중 하나는 바로 ‘음식’일 것이다.
+					여행지에서 먹는 음식에는 당시의 그곳 풍경과 운치, 그때의 감정이 담긴 채 훗날 추억이 된다. 그만큼 음식은 완벽한
+					여행을 위해 빠질 수 없는 필수 요소 중 하나다.</p>
+			</div>
+			<div class="flex-col col-2">
+				<p></p>
+				<h1>Our Services</h1>
+			</div>
+			<div class="flex-col col-3 bgimg">
+				<img src="images/service2_bg.jpg">
+			</div>
+			<div class="flex-col col-4">
+				<ul class="flex-container">
+					<li class="item1">
+						<div>
+							<img src="images/service2_dice1.png">
+							<h3>Our Servuce1</h3>
+							<p>반응형웹템플릿 제작/판매</p>
+						</div>
+					</li>
+					<li class="item2">
+						<div>
+							<img src="images/service2_dice2.png">
+							<h3>Our Servuce2</h3>
+							<p>반응형웹템플릿 제작/판매</p>
+						</div>
+					</li>
+					<li class="item3">
+						<div>
+							<img src="images/service2_dice3.png">
+							<h3>Our Servuce3</h3>
+							<p>반응형웹템플릿 제작/판매</p>
+						</div>
+					</li>
+					<li class="item4">
+						<div>
+							<img src="images/service2_dice4.png">
+							<h3>Our Servuce4</h3>
+							<p>반응형웹템플릿 제작/판매</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+		<div class="today-open">
+		<div class="contents">
 			<div>
-				<a href="#">
-					<img src="${path}/include/images/test.jpg">
-					<div>
-						<h4>[785% 앵콜]교통비절감 주행거리 100KM 48V 전기자전거 부릉이</h4>
-						<p><span>0%</span> 리워드</p>
-					</div>
-				</a>
+				<h1>주목하세요! <em>#오늘 오픈한 펀딩</em></h1><span><a href="#">&lt;12345&gt;</a></span>
 			</div>
 			<div>
-				<a href="#">
-					<img src="${path}/include/images/test.jpg">
-					<div>
-						<h4>[널스토어] 그 어디에도 없었던 '신규간호사 박스'가 찾아왔다!</h4>
-						<p><span>0%</span> 리워드</p>
-					</div>
-				</a>
-			</div>
-			<div>
-				<a href="#">
-					<img src="${path}/include/images/test.jpg">
-					<div>
-						<h4>[당신이 찾던 바로 그 지갑] 한 손에 쏙! 들어오는 몽돌 지갑</h4>
-						<p><span>0%</span> 리워드</p>
-					</div>
-				</a>
-			</div>
-			<div>
-				<a href="#">
-					<img src="${path}/include/images/test.jpg">
-					<div>
-						<h4>[반지의 정석]에 품격을 더하다 MADI STUDIO(마디스튜디오)</h4>
-						<p><span>0%</span> 리워드</p>
-					</div>
-				</a>
-			</div>
-			<div>
-				<a href="#">
-					<img src="${path}/include/images/test.jpg">
-					<div>
-						<h4>[일루전 그래피티] 당신의 여름을 최고의 특별함과 시작하세요!</h4>
-						<p><span>0%</span> 리워드</p>
-					</div>
-				</a>
+				<div>
+					<a href="#">
+						<img src="${path}/include/images/test.jpg">
+						<div>
+							<h4>[785% 앵콜]교통비절감 주행거리 100KM 48V 전기자전거 부릉이</h4>
+							<p><span>0%</span> 리워드</p>
+						</div>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="${path}/include/images/test.jpg">
+						<div>
+							<h4>[널스토어] 그 어디에도 없었던 '신규간호사 박스'가 찾아왔다!</h4>
+							<p><span>0%</span> 리워드</p>
+						</div>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="${path}/include/images/test.jpg">
+						<div>
+							<h4>[당신이 찾던 바로 그 지갑] 한 손에 쏙! 들어오는 몽돌 지갑</h4>
+							<p><span>0%</span> 리워드</p>
+						</div>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="${path}/include/images/test.jpg">
+						<div>
+							<h4>[반지의 정석]에 품격을 더하다 MADI STUDIO(마디스튜디오)</h4>
+							<p><span>0%</span> 리워드</p>
+						</div>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="${path}/include/images/test.jpg">
+						<div>
+							<h4>[일루전 그래피티] 당신의 여름을 최고의 특별함과 시작하세요!</h4>
+							<p><span>0%</span> 리워드</p>
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
+	
 	<div class="section">
 		<div class="hat">
 			<h1>이 펀딩 어때요?</h1>
@@ -297,9 +363,6 @@
 <p>마음 대신 전하는 선물</p>
 <p>먹는건강, 입는건강</p>
 </div>
-
-
-
-
+<%@ include file="include/site-footer.jsp" %>
 </body>
 </html>

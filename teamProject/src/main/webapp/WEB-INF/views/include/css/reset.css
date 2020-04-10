@@ -1,25 +1,35 @@
 @charset "UTF-8";
 /* commons */
-html {
-	-webkit-text-size-adjust: 100%; /*Chrome, Safari, newer versions of Opera*/
-	-moz-text-size-adjust: 100%; /*Firefox*/
-	-ms-text-size-adjust: 100%;  /*Ie*/
-	-o-text-size-adjust: 100%; /*old versions of Opera*/
-	font-size: 10px;
-}
+html, body {width:100%;}
+html {-webkit-touch-callout: none; -webkit-user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -o-text-size-adjust: 100%; font-size: 10px;}
+body {width: 100%; background: #fff; min-width: 320px; -webkit-text-size-adjust: none; word-wrap: break-word; word-break: break-all;}
+table {width: 100%; border-spacing: 0; border-collapse: collapse;}
+img,fieldset {border: 0;}
+address,caption,cite,code,em {font-style: normal; font-weight: normal;}
+label,img,input,select,textarea,button {vertical-align: middle;}
+caption,legend {line-height: 0; font-size: 1px; overflow: hidden;}
+ * {outline:0 !important; -webkit-tap-highlight-color: rgba(0,0,0,0) !important; tap-highlight-color: rgba(0,0,0,0) !important;}
 /* 여백 초기화 */
-body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,legend,p,select,table,th,td,tr,textarea,button,form,figure,figcaption{margin:0;padding:0;}
+html,body,h1,h2,h3,h4,h5,h6,div,p,blockquote,pre,code,address,ul,ol,li,menu,nav,section,article,aside,
+dl,dt,dd,table,thead,tbody,tfoot,label,caption,th,td,form,fieldset,legend,hr,input,button,textarea,object,figure,figcaption {margin: 0; padding: 0;}
 /* a 링크 초기화 */
 a {color: #222; text-decoration: none;}
+a:link, a:hover, a:active{text-decoration: none;}
 /* 폰트 초기화 */
-body, input, textarea, select, button, table {font-family: 'Nanum Gothic', AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; color: #222; font-size: 13px; line-height: 1.6;}
+body, input, textarea, select, button, table {font-family: 'Nanum Gothic', AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; color: #222;}
 /* 폰트 스타일 초기화 */
 em,address {font-style: normal;}
 /* 블릿기호 초기화 */
 ul,li,ol {list-style: none;}
 /* 제목 태그 초기화 */
-h1,h2,h3,h4,h5,h6 {font-weight: 700; font-size: inherit;}
+h1,h2,h3,h4,h5,h6 {font-weight: 700;}
 /* 버튼 초기화 */
 button {border: 0;}
 /* 반응형 */
 img {width: 100%; height: 100%;}
+
+.clear {zoom: 1; clear: both;}
+.clear:after {content: ""; display: block; clear: both;}
+.hide {position: absolute; left: -5000px;}
+.skip {position: absolute; left: 0; top: -100px; width: 100%; height: 50px; line-height: 50px; background: #000; color: #fff; text-align: center; font-size: 14px; transition: all 0.5s;}
+.skip:focus {top:0;}
