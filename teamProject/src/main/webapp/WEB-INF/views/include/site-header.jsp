@@ -2,16 +2,16 @@
     pageEncoding="UTF-8"%>
 <header>
 	<nav>
-		<h1 class="logo"><a href="#">IFU</a></h1>
+		<h1 class="logo"><a href="${path}">IFU</a></h1>
 		<ul class="main-left-menu">
-			<li><a>투자</a></li>
-			<li><a>리워드</a></li>
-			<li><a>커뮤니티</a></li>
+			<li><a href="#">투자</a></li>
+			<li><a href="#">리워드</a></li>
+			<li><a href="#">커뮤니티</a></li>
 		</ul>
-		<ul class="main-left-menu">
-			<li><a>IFU</a></li>
-			<li><a>공지</a></li>
-			<li><a>TEST</a></li>
+		<ul class="main-right-menu">
+			<li><a href="#">IFU</a></li>
+			<li><a href="#">공지</a></li>
+			<li><a href="#">TEST</a></li>
 		</ul>
 	</nav>
 </header>
@@ -19,30 +19,24 @@
 	<div class="container slide_wrapper">
 		<ul class="slides">
 			<li>
-				<h2>TEST</h2>
-				<p>TEST</p>
-				<p><a href="#" class="btn">TEST</a></p>
+				<h2 class="jombo_tt">테스트</h2>
+				<p>테스트</p>
+				<p><a href="#" class="btn">테스트</a></p>
+				<div class="img"></div>
 			</li>
 			<li>
-				<h2>TEST</h2>
-				<p>TEST</p>
-				<p><a href="#" class="btn">TEST</a></p>
+				<h2 class="jombo_tt">테스트</h2>
+				<p>테스트</p>
+				<p><a href="#" class="btn">테스트</a></p>
 			</li>
 			<li>
-				<h2>TEST</h2>
-				<p>TEST</p>
-				<p><a href="#" class="btn">TEST</a></p>
+				<h2 class="jombo_tt">테스트</h2>
+				<p>테스트</p>
+				<p><a href="#" class="btn">테스트</a></p>
 			</li>
 		</ul>
-		<p class="controls">
-			<span class="prev">prev</span>
-			<span class="next">next</span>
-		</p>
-		<p class="pager"></p>
 	</div>
-	
 </section>
-
     
     
     
@@ -53,14 +47,7 @@
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
+<!--    
     
 <a href="#" class="skip">본문바로가기</a>
 <div class="header-wrap">
@@ -188,27 +175,5 @@
 				</div>
 			</div>
 		</div>
-		<div class="swiper-button-prev">
-			<i class="xi-angle-left-thin"></i>
-		</div>
-		<div class="swiper-button-next">
-			<i class="xi-angle-right-thin"></i>
-		</div>
-		<div class="swiper-scrollbar"></div>
 	</div>
-	<script>
-		var swiper = new Swiper('.swiper-container', {
-			navigation : {
-				nextEl : '.swiper-button-next',
-				prevEl : '.swiper-button-prev',
-			},
-			scrollbar : {
-				el : '.swiper-scrollbar',
-				draggable : true,
-			},
-			autoplay : {
-				delay : 3000,
-			},
-		});
-	</script>
-</div>
+</div> -->

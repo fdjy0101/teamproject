@@ -11,8 +11,8 @@
 <body>
 <%@ include file="include/site-header.jsp" %>
 <!-- contents -->
-<div class="content-wrap">
-	<div class="search">
+<main class="page">
+	<section class="search">
 		<h1>INVEST FOR US : IFU</h1>
 		<p>아이디어가 돈이 되는공간 IFU</p>
 		<h1>어떤 프로젝트를 찾고 계신가요?</h1>
@@ -20,71 +20,8 @@
 			<input type="text" id="search" name="search" placeholder="SEARCH" size="100">
 			<button type="submit">검색</button>
 		</form>
-	</div>
-
-	<div class="mustbe">
-		<section class="service2 flex-container">
-			<div class="flex-col col-1">
-				<h1>안녕하세요!</h1>
-				<p class="text-justify">여행을 하며 느끼는 즐거움 중 하나는 바로 ‘음식’일 것이다.
-					여행지에서 먹는 음식에는 당시의 그곳 풍경과 운치, 그때의 감정이 담긴 채 훗날 추억이 된다. 그만큼 음식은 완벽한
-					여행을 위해 빠질 수 없는 필수 요소 중 하나다. 여행을 하며 느끼는 즐거움 중 하나는 바로 ‘음식’일 것이다.
-					여행지에서 먹는 음식에는 당시의 그곳 풍경과 운치, 그때의 감정이 담긴 채 훗날 추억이 된다. 그만큼 음식은 완벽한
-					여행을 위해 빠질 수 없는 필수 요소 중 하나다.</p>
-			</div>
-			<div class="flex-col col-2">
-				<p></p>
-				<h1>Our Services</h1>
-			</div>
-			<div class="flex-col col-3 bgimg">
-				<img src="images/service2_bg.jpg">
-			</div>
-			<div class="flex-col col-4">
-				<ul class="flex-container">
-					<li class="item1">
-						<div>
-							<img src="images/service2_dice1.png">
-							<h3>Our Servuce1</h3>
-							<p>반응형웹템플릿 제작/판매</p>
-						</div>
-					</li>
-					<li class="item2">
-						<div>
-							<img src="images/service2_dice2.png">
-							<h3>Our Servuce2</h3>
-							<p>반응형웹템플릿 제작/판매</p>
-						</div>
-					</li>
-					<li class="item3">
-						<div>
-							<img src="images/service2_dice3.png">
-							<h3>Our Servuce3</h3>
-							<p>반응형웹템플릿 제작/판매</p>
-						</div>
-					</li>
-					<li class="item4">
-						<div>
-							<img src="images/service2_dice4.png">
-							<h3>Our Servuce4</h3>
-							<p>반응형웹템플릿 제작/판매</p>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</section>
-	</div>
-
-
-
-
-
-
-
-
-
-
-
-		<div class="today-open">
+	</section>
+	<section class="today-open">
 		<div class="contents">
 			<div>
 				<h1>주목하세요! <em>#오늘 오픈한 펀딩</em></h1><span><a href="#">&lt;12345&gt;</a></span>
@@ -137,10 +74,10 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	
-	<div class="section">
-		<div class="hat">
+	</section>
+
+	<section class="section">
+		<article class="hat">
 			<h1>이 펀딩 어때요?</h1>
 			<div>
 				<div>
@@ -180,8 +117,8 @@
 					</a>
 				</div>
 			</div>
-		</div>
-		<div class="ifus">
+		</article>
+		<article class="ifus">
 			<h1>IFU : Yes, We can</h1>
 			<p>IFU의 훌륭한 성공사례를 만나보세요</p>
 			<ul>
@@ -223,146 +160,134 @@
 					</a>
 				</li>
 			</ul>
-		</div>
-	</div>
+		</article>
+	</section>
 
-<!-- 트렌드 -->
-<div class="trend">
-	<h1>트렌드</h1>
-	<div class="tab-wrap">
-		<div class="tab-menu">
-			<button type="button" class="tab-btn on">급상승 펀딩</button>
-			<button type="button" class="tab-btn">가장 많은 사람들이 좋아한 펀딩</button>
-			<button type="button" class="tab-btn">가장 많은 서포터</button>
-		</div>
-		<div class="tab-box-container">
-			<div class="tab-box on">
-				<p>전날 대비 펀딩 달성 상승률이 높은 프로젝트</p>
-				<a href="#">
-					<img src="${path}/include/images/test.jpg">
-					<div>
-						<h4>로봇산업투자ㅣLGU+ MOUㅣ한국형 아마존KIVA를 만나다</h4>
-						<p><span>249%</span> 투자</p>
-					</div>
-				</a>
-				<a href="#">
-					<img src="${path}/include/images/test.jpg">
-					<div>
-						<h4>가구산업투자ㅣ20분만에 초과달성ㅣ2019고객만족브랜드 대상</h4>
-						<p><span>249%</span> 투자</p>
-					</div>
-				</a>
-				<a href="#">
-					<img src="${path}/include/images/test.jpg">
-					<div>
-						<h4>[20만원대실화]도난경보기, 전후륜서스펜션, 경량 전동킥보드C350Pro</h4>
-						<p><span>20778%</span> 리워드</p>
-					</div>
-				</a>
-				<a href="#">
-					<img src="${path}/include/images/test.jpg">
-					<div>
-						<h4>[앵콜] 가정용 DIY 전동공구의 최강자! 12종 헤드의 달인파워툴</h4>
-						<p><span>22329%</span> 리워드</p>
-					</div>
-				</a>
+	<!-- 트렌드 -->
+	<section class="trend">
+		<h1>트렌드</h1>
+		<div class="tab-wrap">
+			<div class="tab-menu">
+				<button type="button" class="tab-btn on">급상승 펀딩</button>
+				<button type="button" class="tab-btn">가장 많은 사람들이 좋아한 펀딩</button>
+				<button type="button" class="tab-btn">가장 많은 서포터</button>
 			</div>
-			<div class="tab-box">
-				<p>24시간 내 좋아요를 가장 많이 받은 프로젝트</p>
-				<div>
-					<a href="#">
-						<img src="${path}/include/images/test.jpg">
-						<div>
-							<h4>시니어푸드투자ㅣ연매출68억달성ㅣ국무총리상 수상한 사회적기업</h4>
-							<p><span>80%</span> 투자</p>
-						</div>
-					</a>
-				</div>
-				<div>
-					<a href="#">
-						<img src="${path}/include/images/test.jpg">
+			<div class="tab-box-container">
+				<div class="tab-box on">
+					<p>전날 대비 펀딩 달성 상승률이 높은 프로젝트</p>
+					<a href="#"> <img src="${path}/include/images/test.jpg">
 						<div>
 							<h4>로봇산업투자ㅣLGU+ MOUㅣ한국형 아마존KIVA를 만나다</h4>
 							<p><span>249%</span> 투자</p>
 						</div>
-					</a>
-				</div>
-				<div>
-					<a href="#">
-						<img src="${path}/include/images/test.jpg">
+					</a> <a href="#"> <img src="${path}/include/images/test.jpg">
 						<div>
-							<h4>[3만원대 무선 핸디형청소기] 자취방.사무실.자동차 "청소가 쉬워져요"</h4>
-							<p><span>2500%</span> 리워드</p>
+							<h4>가구산업투자ㅣ20분만에 초과달성ㅣ2019고객만족브랜드 대상</h4>
+							<p><span>249%</span> 투자</p>
+						</div>
+					</a> <a href="#"> <img src="${path}/include/images/test.jpg">
+						<div>
+							<h4>[20만원대실화]도난경보기, 전후륜서스펜션, 경량 전동킥보드C350Pro</h4>
+							<p><span>20778%</span> 리워드</p>
+						</div>
+					</a> <a href="#"> <img src="${path}/include/images/test.jpg">
+						<div>
+							<h4>[앵콜] 가정용 DIY 전동공구의 최강자! 12종 헤드의 달인파워툴</h4>
+							<p><span>22329%</span> 리워드</p>
 						</div>
 					</a>
 				</div>
-				<div>
-					<a href="#">
-						<img src="${path}/include/images/test.jpg">
-						<div>
-							<h4>스타킹 유목생활 끝! 신는 파운데이션, 사계절 파데스타킹</h4>
-							<p><span>3579%</span> 리워드</p>
-						</div>
-					</a>
+				<div class="tab-box">
+					<p>24시간 내 좋아요를 가장 많이 받은 프로젝트</p>
+					<div>
+						<a href="#"> <img src="${path}/include/images/test.jpg">
+							<div>
+								<h4>시니어푸드투자ㅣ연매출68억달성ㅣ국무총리상 수상한 사회적기업</h4>
+								<p><span>80%</span> 투자</p>
+							</div>
+						</a>
+					</div>
+					<div>
+						<a href="#"> <img src="${path}/include/images/test.jpg">
+							<div>
+								<h4>로봇산업투자ㅣLGU+ MOUㅣ한국형 아마존KIVA를 만나다</h4>
+								<p><span>249%</span> 투자</p>
+							</div>
+						</a>
+					</div>
+					<div>
+						<a href="#"> <img src="${path}/include/images/test.jpg">
+							<div>
+								<h4>[3만원대 무선 핸디형청소기] 자취방.사무실.자동차 "청소가 쉬워져요"</h4>
+								<p><span>2500%</span> 리워드</p>
+							</div>
+						</a>
+					</div>
+					<div>
+						<a href="#"> <img src="${path}/include/images/test.jpg">
+							<div>
+								<h4>스타킹 유목생활 끝! 신는 파운데이션, 사계절 파데스타킹</h4>
+								<p><span>3579%</span> 리워드</p>
+								</div>
+							</a>
+					</div>
 				</div>
-			</div>
-			<div class="tab-box">
-				<p>메이커의 펀딩 스토리가 가장 많이 공유된 프로젝트</p>
-				<div>
-					<a href="#">
-						<img src="${path}/include/images/test.jpg">
-						<div>
-							<h4>300%초과 달성ㅣ영상분석ㅣ삼성도 인정한 AI영상분석 기술</h4>
-							<p><span>81%</span> 투자</p>
-						</div>
-					</a>
-				</div>
-				<div>
-					<a href="#">
-						<img src="${path}/include/images/test.jpg">
-						<div>
-							<h4>세탁O2O투자ㅣ전국GS25로 확장중ㅣ한국벤처투자의 투자기업</h4>
-							<p><span>20%</span> 투자</p>
-						</div>
-					</a>
-				</div>
-				<div>
-					<a href="#">
-						<img src="${path}/include/images/test.jpg">
-						<div>
-							<h4>[100%선물] 허가받은 알레르기성 비염 치료 의료기기 '코라이나'</h4>
-							<p><span>673%</span> 리워드</p>
-						</div>
-					</a>
-				</div>
-				<div>
-					<a href="#">
-						<img src="${path}/include/images/test.jpg">
-						<div>
-							<h4>대용량 필터와 6개 컬러까지! 필터교체형 패션마스크 <퓨어 패션마스크></h4>
-							<p><span>1574%</span> 리워드</p>
-						</div>
-					</a>
+				<div class="tab-box">
+					<p>메이커의 펀딩 스토리가 가장 많이 공유된 프로젝트</p>
+					<div>
+						<a href="#"> <img src="${path}/include/images/test.jpg">
+							<div>
+								<h4>300%초과 달성ㅣ영상분석ㅣ삼성도 인정한 AI영상분석 기술</h4>
+								<p><span>81%</span> 투자</p>
+							</div>
+						</a>
+					</div>
+					<div>
+						<a href="#"> <img src="${path}/include/images/test.jpg">
+							<div>
+								<h4>세탁O2O투자ㅣ전국GS25로 확장중ㅣ한국벤처투자의 투자기업</h4>
+								<p><span>20%</span> 투자</p>
+							</div>
+						</a>
+					</div>
+					<div>
+						<a href="#"> <img src="${path}/include/images/test.jpg">
+							<div>
+								<h4>[100%선물] 허가받은 알레르기성 비염 치료 의료기기 '코라이나'</h4>
+								<p><span>673%</span> 리워드</p>
+							</div>
+						</a>
+					</div>
+					<div>
+						<a href="#"> <img src="${path}/include/images/test.jpg">
+							<div>
+								<h4>
+									대용량 필터와 6개 컬러까지! 필터교체형 패션마스크
+									<퓨어 패션마스크>
+								</h4>
+								<p><span>1574%</span> 리워드</p>
+							</div>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
+	</section>
 
-<!-- side -->
-<h4>투자 오픈 시작하기</h4>
-<p>SEED부터 PRE IPO까지 스타트업 투자유치</p>
-<h4>리워드 오픈 시작하기</h4>
-<p>제품, 서비스를 제공하고 서포터를 만나는 곳</p>
-<h1>얼리버드</h1>
-<p>먼저 펀딩하는 분들께 드리는 얼리버드 혜택!</p>
+	<!-- side -->
+	<h4>투자 오픈 시작하기</h4>
+	<p>SEED부터 PRE IPO까지 스타트업 투자유치</p>
+	<h4>리워드 오픈 시작하기</h4>
+	<p>제품, 서비스를 제공하고 서포터를 만나는 곳</p>
+	<h1>얼리버드</h1>
+	<p>먼저 펀딩하는 분들께 드리는 얼리버드 혜택!</p>
 
-<h1>기획전</h1>
-<!-- 펀딩제목 사진 달성률 카테고리 -->
-<p>라이프 스타일 투자</p>
-<p>마음 대신 전하는 선물</p>
-<p>먹는건강, 입는건강</p>
-</div>
+	<h1>기획전</h1>
+	<!-- 펀딩제목 사진 달성률 카테고리 -->
+	<p>라이프 스타일 투자</p>
+	<p>마음 대신 전하는 선물</p>
+	<p>먹는건강, 입는건강</p>
+</main>
 <%@ include file="include/site-footer.jsp" %>
 </body>
 </html>
