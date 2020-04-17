@@ -1,44 +1,64 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <header>
-	<nav>
-		<h1 class="logo"><a href="${path}">IFU</a></h1>
-		<ul class="main-left-menu">
-			<li><a href="#">투자</a></li>
-			<li><a href="#">리워드</a></li>
-			<li><a href="#">커뮤니티</a></li>
-		</ul>
-		<ul class="main-right-menu">
-			<li><a href="#">IFU</a></li>
-			<li><a href="#">공지</a></li>
-			<li><a href="#">TEST</a></li>
-		</ul>
-	</nav>
-</header>
-<section class="main_slider">
-	<div class="container slide_wrapper">
-		<ul class="slides">
-			<li>
-				<h2 class="jombo_tt">테스트</h2>
-				<p>테스트</p>
-				<p><a href="#" class="btn">테스트</a></p>
-				<div class="img"></div>
-			</li>
-			<li>
-				<h2 class="jombo_tt">테스트</h2>
-				<p>테스트</p>
-				<p><a href="#" class="btn">테스트</a></p>
-			</li>
-			<li>
-				<h2 class="jombo_tt">테스트</h2>
-				<p>테스트</p>
-				<p><a href="#" class="btn">테스트</a></p>
-			</li>
-		</ul>
+	<div class="top_navigation">
+		<div class="container">
+			<div class="row justify-content-between">
+				<ul class="contact_list">
+					<li>
+						<span><i class="far fa-envelope"></i></span>
+						<a href="mailto:info@ifu.com">info@ifu.com</a>
+					</li>
+					<li>
+						<span><i class="fas fa-phone"></i></span>
+						<span>02-1234-5678</span>
+					</li>
+				</ul>
+				<ul class="social_list">
+					<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+				</ul>
+			</div>
+		</div>
 	</div>
-</section>
-    
-    
+	<nav class="main_navigation">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="gnb">
+					<h1 class="logo">
+						<a href="${path}">IFU
+							<img src="${path}/include/images/logo.png">
+						</a>
+					</h1>
+					<ul>
+						<li><a href="#">투자</a></li>
+						<li><a href="#">리워드</a></li>
+						<li><a href="#">커뮤니티</a></li>
+						<li><a href="#">공지</a></li>
+						<li><a href="#">IFU</a></li>
+					</ul>
+				</div>
+				<ul class="member_nav">
+					<li><a href="#" class="search_btn"><i class="fas fa-search"></i></a></li>
+					<li><a href="#"><i class="far fa-user"></i></a></li>
+					<li><a href="#"><i class="fas fa-sign-in-alt"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section class="search">
+		<h2>INVEST FOR US : IFU</h2>
+		<p>아이디어가 돈이 되는공간 IFU</p>
+		<h3>어떤 프로젝트를 찾고 계신가요?</h3>
+		<form action="#" method="get">
+			<input type="text" id="search" name="search" placeholder="검색">
+			<button type="submit"><i class="fas fa-search"></i></button>
+		</form>
+	</section>
+</header>
+
     
     
     

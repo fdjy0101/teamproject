@@ -5,21 +5,58 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>IFU</title>
+<meta name="keywords" content="invest, funding, company, crowdfunding">
+<meta name="description" content="INVEST FOR US">
+<meta name="robots" content="index">
+<!-- open graph -->
+<meta property="og:title" content="IFU" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.ifu.com" />
+<meta property="og:image" content="http://www.ifu.com/images/logo.png" />
+<meta property="og:description" content="INVEST FOR US">
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="include/images/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="include/images/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="include/images/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="include/images/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="include/images/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="include/images/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="include/images/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="include/images/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="include/images/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="include/images/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="include/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="include/images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="include/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="include/images/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="include/images/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
 <%@ include file="include/common-header.jsp" %>
 </head>
 <body>
 <%@ include file="include/site-header.jsp" %>
 <!-- contents -->
 <main class="page">
-	<section class="search">
-		<h1>INVEST FOR US : IFU</h1>
-		<p>아이디어가 돈이 되는공간 IFU</p>
-		<h1>어떤 프로젝트를 찾고 계신가요?</h1>
-		<form action="">
-			<input type="text" id="search" name="search" placeholder="SEARCH" size="100">
-			<button type="submit">검색</button>
-		</form>
+	<section class="main_slides">
+		<h2 class="hidden">main_slider</h2>
+		<div class="container-fluid slide_wrapper">
+			<ul>
+				<li class="slide slide1">
+					<a href="#" class="container slide_contents">
+						<img src="${path}/include/images/banner.jpg">
+						<div class="contents">
+							<h2>TEST</h2>
+							<h3>TEST CONTENTS INVEST FOR US</h3>
+							<p>TEST CONTENTS INVEST CONTENTS CONTENTS</p>
+						</div>
+					</a>				
+				</li>
+			</ul>
+		</div>
 	</section>
 	<section class="today-open">
 		<div class="contents">
@@ -75,7 +112,6 @@
 			</div>
 		</div>
 	</section>
-
 	<section class="section">
 		<article class="hat">
 			<h1>이 펀딩 어때요?</h1>
@@ -162,7 +198,6 @@
 			</ul>
 		</article>
 	</section>
-
 	<!-- 트렌드 -->
 	<section class="trend">
 		<h1>트렌드</h1>

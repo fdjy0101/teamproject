@@ -45,4 +45,5 @@ public class HomeController {
 	public String join() {
 		return "join";
 	}
+	
 }
