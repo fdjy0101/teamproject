@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,19 +42,39 @@
 <main class="page">
 	<section class="main_slides">
 		<h2 class="hidden">main_slider</h2>
-		<div class="container-fluid slide_wrapper">
-			<ul>
-				<li class="slide slide1">
-					<a href="#" class="container slide_contents">
+		<div class="slider-wrap">
+			<div class="slider">
+				<div class="slide">
+					<a href="#" class="slide_contents">
 						<img src="${path}/include/images/banner.jpg">
-						<div class="contents">
-							<h2>TEST</h2>
-							<h3>TEST CONTENTS INVEST FOR US</h3>
-							<p>TEST CONTENTS INVEST CONTENTS CONTENTS</p>
+						<div>
+							<h2 class="txt1">slide 1</h2>
+							<p class="txt2">TestTestTestTestTestTestTestTestTest</p>
+							<p class="txt3">TestTestTestTestTestTestTestTestTest</p>
 						</div>
-					</a>				
-				</li>
-			</ul>
+					</a>
+				</div>
+				<div class="slide">
+					<a href="#" class="slide_contents">
+						<img src="${path}/include/images/banner.jpg">
+						<div>
+							<h2 class="txt1">slide 2</h2>
+							<p class="txt2">TestTestTestTestTestTestTestTestTest</p>
+							<p class="txt3">TeTestTestTestTestTestTestTestTestTestst</p>
+						</div>
+					</a>
+				</div>
+				<div class="slide">
+					<a href="#" class="slide_contents">
+						<img src="${path}/include/images/banner.jpg">
+						<div>
+							<h2 class="txt1">slide 3</h2>
+							<p class="txt2">TestTestTestTestTestTestTestTestTest</p>
+							<p class="txt3">TestTestTestTestTestTestTestTestTest</p>
+						</div>
+					</a>
+				</div>
+			</div>
 		</div>
 	</section>
 	<section class="today-open">

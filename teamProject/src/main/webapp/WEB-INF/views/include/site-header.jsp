@@ -1,29 +1,32 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <header>
 	<div class="top_navigation">
 		<div class="container">
-			<div class="row justify-content-between">
-				<ul class="contact_list">
-					<li>
-						<span><i class="far fa-envelope"></i></span>
-						<a href="mailto:info@ifu.com">info@ifu.com</a>
-					</li>
-					<li>
-						<span><i class="fas fa-phone"></i></span>
-						<span>02-1234-5678</span>
-					</li>
-				</ul>
-				<ul class="social_list">
-					<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-				</ul>
+			<div class="d-flex justify-content-between">
+				<div>
+					<ul class="contact_list">
+						<li>
+							<span><i class="far fa-envelope"></i></span>
+							<a href="mailto:info@ifu.com">info@ifu.com</a>
+						</li>
+						<li>
+							<span><i class="fas fa-phone"></i></span>
+							<span>02-1234-5678</span>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<ul class="social_list">
+						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
-	<nav class="main_navigation">
+<%-- 	<nav class="main_navigation">
 		<div class="container">
 			<div class="row justify-content-between">
 				<div class="gnb">
@@ -47,28 +50,48 @@
 				</ul>
 			</div>
 		</div>
+	</nav> --%>
+	<nav class="navbar navbar-expand-lg bg-light navbar-light top-navbar main_navigation" data-toggle="sticky-onscroll">
+		<div class="container">
+			<a class="navbar-brand" href="#">IFU<img src="${path}/include/images/logo.png"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="nav-item"><a class="nav-link" href="#">투자</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">리워드</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">커뮤니티</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">공지</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">IFU</a></li>
+				</ul>
+			</div>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+				<ul class="nav navbar-nav navbar-right member_nav">
+					<li class="nav-item"><a class="nav-link search_btn" href="#"><i class="fas fa-search"></i></a></li>
+					<li class="nav-item"><a class="nav-link" href="login.do"><i class="far fa-user"></i></a></li>
+					<li class="nav-item"><a class="nav-link" href="join.do"><i class="fas fa-sign-in-alt"></i></a></li>
+				</ul>
+			</div>
+		</div>
 	</nav>
-	<section class="search">
+<!-- 	<div class="search">
 		<h2>INVEST FOR US : IFU</h2>
 		<p>아이디어가 돈이 되는공간 IFU</p>
 		<h3>어떤 프로젝트를 찾고 계신가요?</h3>
 		<form action="#" method="get">
 			<input type="text" id="search" name="search" placeholder="검색">
-			<button type="submit"><i class="fas fa-search"></i></button>
+			<button type="submit">
+				<i class="fas fa-search"></i>
+			</button>
 		</form>
-	</section>
+	</div> -->
 </header>
 
-    
-    
-    
-    
-    
-    
-    
-    
+
 <!--    
-    
 <a href="#" class="skip">본문바로가기</a>
 <div class="header-wrap">
 	<div class="header">
