@@ -12,30 +12,29 @@ $(function(){
 			stickyWrapper.height('auto');
 		}
 	};
-	$('[data-toggle="sticky-onscroll"]').each(function () {
+	$('[data-toggle="sticky-onscroll"]').each(function(){
 		var sticky = $(this);
 		var stickyWrapper = $('<div>').addClass('sticky-wrapper');
 		sticky.before(stickyWrapper);
 		sticky.addClass('sticky');
-		$(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function () {
+		$(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function(){
 			stickyToggle(sticky, stickyWrapper, $(this));
 		});
 		stickyToggle(sticky, stickyWrapper, $(window));
 	});
 	var swiper = new Swiper('.swiper-container', {
-		slidesPerView: 'auto',
-		initialSlide: 2,
-		speed: 1000,
-		spaceBetween: 32,
 		loop: true,
 		centeredSlides: true,
-		roundLengths: true,
 		mousewheel: true,
 		grabCursor: true,
+		autoplay: {
+			delay: 2500,
+			disableOnInteraction: false,
+		},
 		pagination: {
 			el: '.swiper-pagination',
 			clickable: true,
-		}
+		},
 	});
 
 	//메인 캐러셀

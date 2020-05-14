@@ -117,12 +117,11 @@ function end_invest(){
 								</c:choose>								
 							</div>
 							<div class="col-sm-3 col-12 py-1">
-								<h5 class="categorie mb-1">주카테고리</h5>
+								<h5 class="categorie mb-1">${list.p_division}</h5>
 							</div>
 							<div class="col-sm-4 col-12 d-flex align-items-center py-1">
 								<div class="detail-categories">
 									<ul>
-										<li>#${list.p_division}</li>
 										<li>#${list.p_detail_division}</li>
 									</ul>
 								</div>
